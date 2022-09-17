@@ -956,11 +956,18 @@ textarea {
 .register-form-input:focus + .register-form-icon {
   border-color: #2196f3;
   fill: #2196f3;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-input:hover + .register-form-icon {
   border-color: #2196f3;
   fill: #2196f3;
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .register-form-icon {
@@ -971,7 +978,11 @@ textarea {
   transform: translateY(-50%);
   top: 50%;
   fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .register-form-agreement {
   display: block;
