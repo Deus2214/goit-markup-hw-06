@@ -837,6 +837,7 @@ button, input, optgroup, select, textarea {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;}
+
 .subscribe-button{
   color: var(--primary-text-color);
   font-family: inherit;
@@ -874,7 +875,7 @@ button, input, optgroup, select, textarea {
 
 
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -890,7 +891,7 @@ button, input, optgroup, select, textarea {
   visibility: inherit;
 }
 .modal {
-  padding: 20px 35px;
+  padding: 40px;
   position: absolute;
   width: 528px;
   height: 581px;
@@ -923,7 +924,7 @@ button, input, optgroup, select, textarea {
 
 .register-form-title{
  
-padding-top: 40px;
+
 display: block;
 align-items: center;
 font-style: normal;
@@ -932,7 +933,7 @@ font-size: 20px;
 line-height: 23px;
 text-align: center;
 letter-spacing: 0.03em;
- 
+ margin-bottom: 30px;
 
 }
 .register-form-label{
@@ -958,6 +959,11 @@ border: 1px solid black;
   border-radius: 10px;
 outline: transparent;
 }
+
+.input-span{
+  position: relative;
+}
+
 .register-form-input:focus{
   border-color: #2196f3;
   fill: #2196f3;
@@ -977,7 +983,10 @@ outline: transparent;
 .register-form-icon{
   position: absolute;
   bottom: 11px;
+
   left: 12px;
+  translate(Y)-50%;
+  top: 50%;
   fill: #212121;
 }
 .register-form-icon:focus {
@@ -1072,7 +1081,27 @@ textarea {
   border-image: initial;
   padding: 2px;
 }
+
+
+.email-icon-2{
+  margin-left: 10px;
+}
+.check-icon{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #2a2a2a;
+  border-radius: 2px;
+  margin-right: 9px;
+}
 .register-form-checkbox{
-  background: #2196f3;
-  color: #000000;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+.register-form-checkbox:checked + .check-icon{
+  background-color: #2196f3;
+  background-image: url(../icons/icon\ check.svg);
+  background-size: contain;
+  margin-right: 9px;
 }
