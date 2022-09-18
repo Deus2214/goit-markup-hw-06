@@ -6,15 +6,13 @@ html {
 *::after {
   box-sizing: border-box;
 }
-:root {
-  --primary-text-color: #fffbfb;
-  --section-title-colot: #080505;
-  --accent-color: #2196f3;
-  --accent-white-color: #ffffff;
-  --items: 1;
-  --indent: 30px;
-  --hover-timing: 250mscubic-bezier(0.4, 0, 0.2, 1);
+:root{
+--primary-text-color: #fffbfb;
+--section-title-colot: #080505;
+--accent-color: #2196f3;
+--accent-white-color: #ffffff;
 }
+
 .head {
   text-decoration: none;
 }
@@ -1022,6 +1020,7 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .register-form-field {
   position: relative;
   display: block;
@@ -1040,14 +1039,7 @@ textarea {
 
 textarea {
   writing-mode: horizontal-tb !important;
-  font-style: ;
-  font-variant-ligatures: ;
-  font-variant-caps: ;
-  font-variant-numeric: ;
-  font-variant-east-asian: ;
-  font-weight: ;
-  font-stretch: ;
-  font-size: ;
+ 
   font-family: monospace;
   text-rendering: auto;
   color: fieldtext;
@@ -1059,9 +1051,6 @@ textarea {
   text-shadow: none;
   display: inline-block;
   text-align: start;
-  appearance: auto;
-  -webkit-rtl-ordering: logical;
-  resize: auto;
   cursor: text;
   white-space: pre-wrap;
   overflow-wrap: break-word;
