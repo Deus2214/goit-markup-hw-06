@@ -901,19 +901,35 @@ textarea {
 .modal-btn {
   position: absolute;
   top: 10px;
-  left: 480px;
-
+  right: 10px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 50%;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
-  width: 35px;
-  height: 35px;
+  background-color: var(--primary-text-color);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-btn:hover, .modal-btn:focus{
+  background: transparent;
+  fill: #2196f3;
+}
+.btn-exit:hover,.btn-exit:focus{
+  fill: #2196f3;
+}
+ 
+
+
+
+
+
+
+
 
 .register-form-title {
   display: block;
@@ -937,15 +953,15 @@ textarea {
 }
 .register-form-input {
   width: 100%;
-  height: 32px;
+  height: 40px;
   padding-left: 42px;
   padding-right: 42px;
   transition-property: border, border-radius, cursor;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   outline: transparent;
 }
 
@@ -953,22 +969,16 @@ textarea {
   position: relative;
 }
 
-.register-form-input:focus + .register-form-icon {
-  border-color: #2196f3;
+.register-form-icon:hover, .register-form-icon:focus {
+
   fill: #2196f3;
   transition-property: border, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form-input:hover + .register-form-icon {
-  border-color: #2196f3;
-  fill: #2196f3;
-  transition-property: border, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
+.register-form-input:hover, .register-form-input:focus{ 
+  border-color: #2196f3; }  
 
 .register-form-icon {
   position: absolute;
@@ -1018,7 +1028,7 @@ textarea {
 .register-form-field {
   position: relative;
   display: block;
-  margin-bottom: 20px;
+ 
 }
 
 .register-form-message {
@@ -1071,12 +1081,13 @@ textarea {
 
 .email-icon-2 {
   margin-left: 10px;
+  fill: #f5f4fa;
 }
 .check-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid #2196f3;
+  border: 2px solid #757575;
   border-radius: 2px;
   margin-right: 9px;
 }
@@ -1098,4 +1109,8 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+.feedback{
+  margin-bottom: 20px;
 }
