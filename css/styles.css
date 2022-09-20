@@ -1036,7 +1036,11 @@ textarea {
   border: 1px solid black;
   border-radius: 10px;
 }
-
+.textarea:focus, .textarea:hover{
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+}
 textarea {
   writing-mode: horizontal-tb !important;
  
